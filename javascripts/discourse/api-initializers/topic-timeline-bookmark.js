@@ -89,7 +89,7 @@ export default apiInitializer("0.11.1", (api) => {
       return contents;
     },
 
-    topicBookmarkToggled() {
+    bookmarksChanged() {
       this.scheduleRerender();
     },
 
@@ -107,7 +107,7 @@ export default apiInitializer("0.11.1", (api) => {
   api.dispatchWidgetAppEvent(
     "topic-timeline",
     "topic-timeline-bookmark",
-    "topic:bookmark-toggled"
+    "bookmarks:changed"
   );
 
   //Refresh the topic-timeline widget whenever the post bookmark is toggled
