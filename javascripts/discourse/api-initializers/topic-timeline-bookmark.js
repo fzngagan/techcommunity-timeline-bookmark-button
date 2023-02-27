@@ -107,15 +107,8 @@ export default apiInitializer("0.11.1", (api) => {
 
   //Refresh the topic-timeline widget whenever the post bookmark is toggled
   api.dispatchWidgetAppEvent(
-    "topic-timeline",
+    "topic-timeline-container",
     "topic-timeline-bookmark",
-    "page:bookmark-post-toggled"
-  );
-
-  //Refresh the topic-timeline widget whenever the post-stream is refreshed
-  api.dispatchWidgetAppEvent(
-    "topic-timeline",
-    "topic-timeline-bookmark",
-    "post-stream:refresh"
+    "bookmarks:changed"
   );
 });
