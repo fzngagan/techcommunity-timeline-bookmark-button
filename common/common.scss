@@ -3,18 +3,10 @@
 .discourse-bookmark-button-wrapper {
   margin-top: 0.5em;
   transition: all 0.25s;
-  .anon & {
-    display: none;
-  }
+  width: 150px;
   .bookmark.bookmarked {
     .d-icon-discourse-bookmark-clock, .d-icon-bookmark{
       color: var(--tertiary);
     }
-  }
-}
-
-.timeline-docked-bottom {
-  .discourse-bookmark-button-wrapper {
-    opacity: 0;
   }
 }
