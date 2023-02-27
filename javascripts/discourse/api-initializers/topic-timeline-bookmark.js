@@ -100,7 +100,7 @@ export default apiInitializer("0.11.1", (api) => {
 
   //Refresh the topic-timeline widget whenever the topic bookmark is toggled
   api.dispatchWidgetAppEvent(
-    "topic-timeline.container",
+    "topic-timeline/container",
     "topic-timeline-bookmark",
     "bookmarks:changed"
   );
