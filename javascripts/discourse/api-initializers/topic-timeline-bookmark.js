@@ -137,6 +137,6 @@ export default apiInitializer("0.11.1", (api) => {
   api.dispatchWidgetAppEvent(
     "topic",
     "topic-timeline-bookmark",
-    "post-stream:refresh"
+    "bookmarks:changed"
   );
 });
