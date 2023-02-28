@@ -90,12 +90,19 @@ export default apiInitializer("0.11.1", (api) => {
     },
 
     bookmarksChanged() {
+      debugger;
       this.scheduleRerender();
     },
 
     pageBookmarkPostToggled() {
+      debugger;
       this.scheduleRerender();
     },
+
+    postStreamRefresh() {
+      debugger;
+      this.scheduleRerender();
+    }
   });
 
   //Refresh the topic-timeline widget whenever the topic bookmark is toggled
