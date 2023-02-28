@@ -11,7 +11,7 @@ export default apiInitializer("0.11.1", (api) => {
   api.createWidget("topic-timeline-bookmark", {
     tagName: "div.discourse-bookmark-button-wrapper",
 
-    buildKey: () => "topic-timeline-bookmark",
+    buildKey: () => `topic-timeline-bookmark`,
     
     //Will trigger when topic-timeline bookmark button is clicked. And internally it will call toggleBookmark of the Topic ocntroller to have default bookmark functionality.
     toggleBookmark() {
@@ -114,7 +114,7 @@ export default apiInitializer("0.11.1", (api) => {
 
   //Refresh the topic-timeline widget whenever the post bookmark is toggled
   api.dispatchWidgetAppEvent(
-    "topic-timeline/container",
+    "topic-timeline::container",
     "topic-timeline-bookmark",
     "bookmarks:changed"
   );
