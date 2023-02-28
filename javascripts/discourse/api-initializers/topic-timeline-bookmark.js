@@ -87,19 +87,13 @@ export default apiInitializer("0.11.1", (api) => {
       );
 
       return contents;
-    },
-
-    bookmarksChanged() {
-      debugger;
-      this.scheduleRerender();
-    },
+    }
   });
 
   //Refresh the topic-timeline-bookmark widget whenever the bookmarks:changes event is triggered.
   api.dispatchWidgetAppEvent(
-    "topic-timeline/container",
+    "topic-timeline-bookmark-container",
     "topic-timeline-bookmark",
     "bookmarks:changed"
   );
-
 });
