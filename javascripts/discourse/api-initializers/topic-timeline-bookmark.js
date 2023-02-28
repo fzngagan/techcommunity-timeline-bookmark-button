@@ -132,4 +132,11 @@ export default apiInitializer("0.11.1", (api) => {
     "topic-timeline-bookmark",
     "post-stream:refresh"
   );
+
+  //Refresh the topic-timeline widget whenever the post-stream is refreshed
+  api.dispatchWidgetAppEvent(
+    "topic",
+    "topic-timeline-bookmark",
+    "post-stream:refresh"
+  );
 });
